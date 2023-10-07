@@ -1,0 +1,28 @@
+﻿<Window x:Class="pract2_prm_variant10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pract2_prm_variant10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock 
+    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Height="60" Width="224" FontSize="40"><Run Text="Вариант 10"/></TextBlock>
+        <Button x:Name="btn_task1" Content="Задание 1" 
+                Width="100" Height="40" 
+                HorizontalAlignment="Left" Margin="30,0,0,0" Click="btn_task1_Click"/>
+        <Button x:Name="btn_task2" Content="Задание 2" 
+                Width="100" Height="40" 
+                HorizontalAlignment="Left" Margin="160,0,0,0" Click="btn_task2_Click"/>
+        <Button x:Name="btn_task3" Content="Задание 3" 
+                Width="100" Height="40" 
+                HorizontalAlignment="Left" Margin="290,0,0,0" Click="btn_task3_Click"/>
+        <Button x:Name="btn_task4" Content="Задание 4"
+                Width="100" Height="40"
+                HorizontalAlignment="Left" Margin="420,0,0,0" Click="btn_task4_Click"/>
+        <Button x:Name="btn_task5" Content="Задание 5"
+            Width="100" Height="40"
+            HorizontalAlignment="Left" Margin="552,197,0,197" Click="btn_task5_Click"/>
+    </Grid>
+</Window>

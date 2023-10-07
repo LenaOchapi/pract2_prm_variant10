@@ -1,0 +1,29 @@
+﻿<Window x:Class="pract2_prm_variant10.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pract2_prm_variant10"
+        mc:Ignorable="d"
+        Title="Window5" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnResult" Content="Вывести результат" HorizontalAlignment="Left" Margin="431,16,0,0" VerticalAlignment="Top" Click="btnResult_Click"/>
+        <TextBox x:Name="tbMinMax" HorizontalAlignment="Left" Margin="302,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="46" IsEnabled="False" Text="Минимальный и максимальный элемент массива"/>
+        <Label Content="Вариант 4" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сгенерировать массив размером M столбцов и N строк, &#xD;&#xA;содержащий числа от -10 до 10. &#xA;Отобразить его пользователю.  Отсортировать элементы&#xD;&#xA;в нем по возрастанию и по убыванию.&#xA;Вывести результаты сортировки в двух таблицах. &#xD;&#xA;Найти максимальный и минимальный элементы массива." HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" Height="107" Width="348"/>
+        <Button x:Name="btnBack" Content="Обратно к задачам" HorizontalAlignment="Left" Margin="243,16,0,0" VerticalAlignment="Top" Click="btnBack_Click"/>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="243,268,243,6" Grid.RowSpan="2"/>
+        <DataGrid x:Name="dataGridVoz" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="465,41,0,166"/>
+        <DataGrid x:Name="dataGridUb" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,41,447,166"/>
+        <Label Content="Возрастание" HorizontalAlignment="Left" Margin="679,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Убывание" HorizontalAlignment="Left" Margin="51,8,0,0" VerticalAlignment="Top"/>
+        <Label Content="Основной массив" HorizontalAlignment="Left" Margin="348,235,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbColumns" HorizontalAlignment="Left" Margin="212,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbRows" HorizontalAlignment="Left" Margin="482,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="недоделано,сортировка нормально не работает&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,201,0,0" VerticalAlignment="Top" Height="102" Width="281"/>
+    </Grid>
+</Window>
